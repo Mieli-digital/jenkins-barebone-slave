@@ -21,6 +21,7 @@ RUN apt-get update && \
 # Set password for the jenkins user.
     echo "jenkins:jenkins" | chpasswd && \
     mkdir /home/jenkins/.m2
+    
 RUN chown -R jenkins:jenkins /home/jenkins 
 
 # install docker
