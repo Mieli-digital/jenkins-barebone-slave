@@ -25,7 +25,7 @@ RUN apt-get update && \
 RUN chown -R jenkins:jenkins /home/jenkins 
 
 # install docker
-RUN apt-get install -qy docker-ce docker-ce-cli containerd.io
+RUN apt-get install -qy docker.io
 RUN usermod -aG docker jenkins
 
 # install docker-compose
